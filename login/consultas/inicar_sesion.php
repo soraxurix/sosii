@@ -6,7 +6,7 @@ $email = $_POST["email"];
 $password = $_POST["password"];
 
 
-$consulta = "SELECT password from usuarios where correo = '$email' LIMIT 1";
+$consulta = "SELECT password, tipo from usuarios where correo = '$email' LIMIT 1";
 
 $result = mysqli_query($conn, $consulta);
 
@@ -17,9 +17,13 @@ while($row2 = mysqli_fetch_assoc($result)){
 
 if(count($data) != 0){
 	$passwordConsulta = $data[0]['password'];
-	
+	$tipo = $data[0]['tipo'];
 	if($passwordConsulta === $password){
-		echo json_encode(200); //En caso de que la contraseña sea correcta
+		if($tipo != 1){
+			echo json_encode(199); //En caso de que la contraseña sea correcta
+		}else{
+			echo json_encode(200); //En caso de que la contraseña sea correcta
+		}
 	}else{
 		echo json_encode(202); //La contraseña es incorrecta
 	}

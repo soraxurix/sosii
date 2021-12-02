@@ -20,7 +20,9 @@ buttonIniciarSesion.addEventListener("click", async function (e) {
 	const data = await res.json();
 	
 	if(data == 200){
-		window.location.replace("../index.php")
+		window.location.replace("../index.php");
+	}else if(data == 199){
+		window.location.replace("../cliente.php");
 	}else if(data == 201){
 		alerta("MessageBad", "El correo electrónico es incorrecto. Verifiquelo");
 	}else if(data == 202){
