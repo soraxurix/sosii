@@ -2,6 +2,7 @@
 <?php
     include 'conection.php';
     $dbExec = 'SELECT * FROM Clientes';
+    echo "<h1>ADMINISTRADOR</h1>";
     if ( $result = mysqli_query( $dbCon, $dbExec ) ) {
         if ( mysqli_num_rows( $result ) > 0 ) {
             echo '<table>';
