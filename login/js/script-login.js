@@ -25,10 +25,11 @@ buttonIniciarSesion.addEventListener("click", async function (e) {
 		window.location.replace("../cliente.php");
 	}else if(data == 201){
 		alerta("MessageBad", "El correo electrónico es incorrecto. Verifiquelo");
+		loader.classList.add("d-none");
 	}else if(data == 202){
 		alerta("MessageBad", "La contraseña es incorrecta. Verifiquelo");
+		loader.classList.add("d-none");
 	}
 
-	// Ocultamos el loader
-	loader.classList.add("d-none");
+	// Ocultamos el loader	
 });
