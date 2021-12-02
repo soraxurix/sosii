@@ -3,8 +3,8 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 02-12-2021 a las 04:16:49
--- Versión del servidor: 10.4.21-MariaDB
+-- Tiempo de generación: 02-12-2021 a las 05:12:32
+-- Versión del servidor: 10.4.21-MariaDB-log
 -- Versión de PHP: 8.0.12
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
@@ -39,7 +39,6 @@ CREATE TABLE `clientes` (
 --
 
 INSERT INTO `clientes` (`id_cliente`, `nombre`, `apellido`, `telefono`) VALUES
-(1, 'Freddy', 'Luna', 12345),
 (2, 'Santiago', 'Lopez', 12345),
 (3, 'Alfredo', 'Luna', 12345);
 

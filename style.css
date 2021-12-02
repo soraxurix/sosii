@@ -5,12 +5,11 @@ table {
 table, th, td {
     border: 1px solid black;
     text-align: center;
-    font-family: monospace;
-    padding: 8px;
+    padding: 5px;
 }
 
 th {
-    background-color: #DDD;
+    background-color: rgb(112, 200, 53);
 }
 
 a {
