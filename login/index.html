@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Inicia sesión</title>
+    <link rel="stylesheet" href="">
+    <!-- Swwet alert -->
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet" />
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+    <!-- MDB -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.6.0/mdb.min.css" rel="stylesheet" />
+    <!-- Animaciones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- Mis estilos -->
+    <link rel="stylesheet" href="css/styles-perfil.css">
+    <link rel="stylesheet" href="css/styles-loader.css">
+  </head>
+  <body>
+    <!-- Agregamos el spinner para el efecto de cargar -->
+    <div id="loaderPrincipal" class="loadingPrincipal d-none">
+      <div class="spinner-border text-info spinner-principal" role="status">
+        <span class="visually-hidden">Loading...</span>
+      </div>
+    </div>
+
+    <!-- Formulario de inico de sesión -->
+    <div class="container-actualizarinfo">
+      <div class="actualizarinfo">
+        <h5 class="text-info">Inicia sesión con tus credenciales</h5>
+        <hr>
+        <div class="form-outline mb-4">
+          <input type="email" id="input-email" class="form-control"/>
+          <label class="form-label" for="input-email">Email</label>
+        </div>
+        <div class="form-outline mb-4">
+          <input type="password" id="input-pass" class="form-control" />
+          <label class="form-label" for="input-pass">Contraseña</label>
+        </div>
+        <!-- Submit button -->
+        <button href="#" class="btn btn-success btn-rounded " id="buttonInicarSesion">Inicar sesion</button>
+      </div>
+    </div>
+    <!-- MDB -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.6.0/mdb.min.js"></script>
+    <!-- Mis scripts -->
+    <script type="text/javascript" src="js/alertas.js"></script>
+    <script type="text/javascript" src="js/script-login.js"></script>
+  </body>
+</html>
